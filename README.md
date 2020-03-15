@@ -1,4 +1,4 @@
-# Slackline coding exercise
+# Stackline coding exercise
 React app using [D3](https://d3js.org) for the sales chart and [M-](http://m-docs.org) for UI components.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
