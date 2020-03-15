@@ -1,0 +1,88 @@
+:root {
+  --color-light-gray: #f1f1f4;
+  --color-med-gray: #f6f8fa;
+  --color-blue: #42a7f3;
+  --color-muted-text: #a8b1c1;
+}
+
+body {
+  background-color: var(--color-med-gray);
+}
+
+.shadow {
+  box-shadow: 1px 2px 5px rgba(203, 203, 203, 0.25);
+}
+
+.light-shadow {
+  box-shadow: 0px 2px 12px rgba(209, 209, 209, 0.10);
+}
+
+.txt-muted {
+  color: var(--color-muted-text);
+}
+
+.full-height {
+  height: 100%;
+}
+
+nav .active {
+  color: #404040;
+}
+
+nav .active m-icon {
+  color: var(--color-blue);
+}
+
+@media only screen and (max-width: 576px) {
+  .sm-screen-pad-b-lg {
+    padding-bottom: 30px;
+  }
+}
+
+/* Override M- to match Stackline DL */
+m-box {
+  border: 1px solid #fdfdfe;
+}
+
+m-box + m-box {
+  margin-top: 48px;
+}
+
+m-tag {
+  display: inline-block;
+  background-color: white;
+  font-weight: 300;
+  border-radius: 4px;
+  padding: 2px 18px;
+  margin-top: 6px;
+  margin-right: 6px;
+}
+
+m-tag + m-tag {
+  margin-left: 0;
+}
+
+hr {
+  margin: 0;
+  background-color: var(--color-light-gray);
+}
+
+table > thead > tr > td {
+  padding-bottom: 30px;
+}
+
+thead > tr {
+  border-top: none;
+}
+
+table > tbody > tr:first-of-type {
+  border-top: 1px solid var(--color-light-gray);
+}
+
+table > tbody > tr {
+  border-bottom: 1px solid var(--color-light-gray);
+  color: var(--color-muted-text);
+}
+table > tbody > tr > td {
+  padding: 18px 48px 18px 0;
+}
