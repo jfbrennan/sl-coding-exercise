@@ -103,23 +103,23 @@ class Product extends React.Component {
           <m-box class="light-shadow">
             <table>
               <thead>
-              <tr>
-                <td className="txt-upper">Week ending <m-icon name="arrow-down" class="mar-l-sm txt-xs txt-muted"></m-icon></td>
-                <td className="txt-upper txt-right">Retail sales <m-icon name="arrow-down" class="mar-l-sm txt-xs txt-muted"></m-icon></td>
-                <td className="txt-upper txt-right">Wholesale sales <m-icon name="arrow-down" class="mar-l-sm txt-xs txt-muted"></m-icon></td>
-                <td className="txt-upper txt-right">Units sold <m-icon name="arrow-down" class="mar-l-sm txt-xs txt-muted"></m-icon></td>
-                <td className="txt-upper txt-right">Retailer margin <m-icon name="arrow-down" class="mar-l-sm txt-xs txt-muted"></m-icon>
+              <tr className="txt-upper txt-right">
+                <td className="txt-left">Week ending <m-icon name="arrow-down" class="mar-l-sm txt-xs txt-muted"></m-icon></td>
+                <td>Retail sales <m-icon name="arrow-down" class="mar-l-sm txt-xs txt-muted"></m-icon></td>
+                <td>Wholesale sales <m-icon name="arrow-down" class="mar-l-sm txt-xs txt-muted"></m-icon></td>
+                <td>Units sold <m-icon name="arrow-down" class="mar-l-sm txt-xs txt-muted"></m-icon></td>
+                <td>Retailer margin <m-icon name="arrow-down" class="mar-l-sm txt-xs txt-muted"></m-icon>
                 </td>
               </tr>
               </thead>
               <tbody>
               {this.state.product.sales && this.state.product.sales.map((sale, i) =>
-                <tr key={i}>
-                  <td>{sale.weekEnding}</td>
-                  <td className="txt-right">{sale.retailSales}</td>
-                  <td className="txt-right">{sale.wholesaleSales}</td>
-                  <td className="txt-right">{sale.unitsSold}</td>
-                  <td className="txt-right">{sale.retailerMargin}</td>
+                <tr key={i} className="txt-right">
+                  <td className="txt-left">{sale.weekEnding}</td>
+                  <td>{sale.retailSales}</td>
+                  <td>{sale.wholesaleSales}</td>
+                  <td>{sale.unitsSold}</td>
+                  <td>{sale.retailerMargin}</td>
                 </tr>
               )}
               </tbody>
